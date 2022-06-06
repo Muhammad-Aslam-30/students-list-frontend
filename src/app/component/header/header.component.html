@@ -1,0 +1,14 @@
+<header>
+    <div class="navbar navbar-dark bg-primary shadow-sm">
+        <button type="button" (click)="back()">Back</button>
+        <button type="button" (click)="next()">Next</button>
+    </div>
+    <div>
+        <tbody>
+            <tr *ngFor="let item of studentList">
+                <td><h2>{{item.sid}}</h2></td><br>
+                <td><h2>{{item.name}}</h2></td>
+            </tr>
+        </tbody>
+    </div>
+</header>
